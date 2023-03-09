@@ -1,8 +1,9 @@
 {
-  "name": "vcard-ts",
+  "name": "@bronen/vcf",
   "version": "1.0.0",
-  "main": "src/index.ts",
-  "repository": "https://github.com/BRonen/vcard-ts",
+  "main": "dist/src/index.js",
+  "types": "src/index.d.ts",
+  "repository": "https://github.com/BRonen/vcf",
   "author": "Brenno Rodrigues <brennopereira6@gmail.com>",
   "license": "MIT",
   "scripts": {
