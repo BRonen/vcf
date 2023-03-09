@@ -1,6 +1,7 @@
-import { vcfData } from '../src/index'
+import { vcfData, generateUrl } from '../src/index'
 import { completeVCF, onlyNameVCF } from './mocks/Vcards'
 import './mocks/Blob'
+import './mocks/URL'
 
 describe('initial module', () => {
 	it('should return the parsed data of a vcard file (only first name)', () => {
@@ -24,5 +25,11 @@ describe('initial module', () => {
 		})
 
 		expect(vcf).toBe(completeVCF())
+	})
+
+	it('should return an url to download a blob with the vcard', () => {
+		const vcf = generateUrl('hello world')
+
+		expect(vcf).toBe('http://host/fake_url')
 	})
 })

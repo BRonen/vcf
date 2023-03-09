@@ -62,8 +62,8 @@ export function vcfData({
 	return data.join('\n')
 }
 
-// export function generateUrl(buffer: string): string {
-// 	const vcf = new Blob([buffer], { type: 'text/vcard' })
-// 	
-// 	return URL.createObjectURL(vcf)
-// }
+export function generateUrl(buffer: string): string {
+	const vcf = new Blob([buffer], { type: 'text/vcard' })
+
+	return URL.createObjectURL(vcf)
+}
